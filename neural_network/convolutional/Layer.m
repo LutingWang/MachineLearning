@@ -5,8 +5,8 @@ classdef Layer < handle
     
     properties (Constant)
         EPSILON = 1;
-        LAMBDA = 0.01;
-        ALPHA = 0.05;
+        LAMBDA = 0.0005;
+        ALPHA = 0.005;
         ACTIVATOR = @(z) 1 ./ (1 + exp(-z));
         RELU = @(z) max(z, 0);
     end
